@@ -17,20 +17,21 @@ export const apiService = {
 
   // Eco route planning
   async planEcoRoute(
-    start: string,
-    end: string,
-    modes: string[] = ['driving-car', 'cycling-regular', 'foot-walking']
-  ): Promise<EcoRouteResponse> {
+  start: string,
+  end: string,
+  modes: string[] = ['driving-car', 'cycling-regular', 'foot-walking']
+): Promise<EcoRouteResponse | { error: string }> {
+  try {
     const modesParam = modes.join(',');
     const response = await api.get('/eco/plan', {
-      params: {
-        start,
-        end,
-        modes: modesParam,
-      },
+      params: { start, end, modes: modesParam },
     });
     return response.data;
-  },
+  } catch (error: any) {
+    console.error('Eco route error:', error);
+    return { error: error.response?.data?.message || 'Failed to fetch eco route' };
+  }
+},
 
   // Quick route comparison
   async compareRoutes(start: string, end: string) {
