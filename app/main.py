@@ -7,7 +7,7 @@ app = FastAPI(title="Eco-MCP API", version="1.0")
 
 # CORS configuration
 origins = [
-    "https://ai-eco.onrender.com",  # your React frontend
+    "*"
 ]
 
 app.add_middleware(
