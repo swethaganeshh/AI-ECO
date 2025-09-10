@@ -1,6 +1,111 @@
-# Eco-Route Planner API
+# 🌱 AgentDock Eco Planner
 
-A comprehensive FastAPI application that helps users find the most eco-friendly travel routes by combining real-time data from multiple sources.
+**AgentDock Eco Planner** is a sustainable route planning platform designed to help users minimize carbon emissions by selecting eco-friendly routes. It integrates AI agents into a docking station (**AgentDock**) using **Cequence AI** for secure authentication and tool access.
+
+---
+
+## 🚀 Live Deployment
+
+- **Frontend**: [https://ai-eco.onrender.com/](https://ai-eco.onrender.com/)  
+- **Backend**: [https://ai-eco-backendd.onrender.com](https://ai-eco-backendd.onrender.com)  
+
+---
+
+## 🧩 Features
+
+- 🌍 Interactive **map interface** (Leaflet + React)  
+- ⚡ Real-time **eco-route suggestions** with carbon footprint estimates  
+- 🤖 AI-powered **route optimization** with sustainability in mind  
+- 🛠️ **AgentDock integration** → allowing AI agents to interact securely  
+- 🔐 **Authentication & Security via Cequence AI**  
+- 🚀 Scalable backend powered by **FastAPI**  
+
+---
+
+## 🏗️ Architecture
+
+![Architecture Diagram](<img width="1983" height="1545" alt="AIECO_Theme2_ArchitectureDiagram" src="https://github.com/user-attachments/assets/d0bc51e1-636a-49e7-a8a8-f076b209509f" />
+) <!-- replace with actual diagram path -->
+
+### Flow:
+1. User interacts with **Frontend (React + Vite)**  
+2. Requests are sent to **Backend (FastAPI)**  
+3. Backend fetches **route data + sustainability metrics**  
+4. AI Agents (via **AgentDock**) plug into tools using **Cequence AI secure MCP Gateway**  
+5. Optimized **eco-friendly routes** are returned to the user  
+
+---
+
+## 🔄 Dataflow Diagram
+
+![Dataflow Diagram](.<img width="2320" height="2825" alt="diagram-export-9-10-2025-1_01_13-PM" src="https://github.com/user-attachments/assets/3d030ce7-a07f-42db-b6a7-561ba22d3a8a" />
+) <!-- replace with actual diagram path -->
+
+### Step-by-step Dataflow:
+1. **User Input**: Origin + Destination entered on frontend  
+2. **Frontend → Backend**: Request sent via Axios  
+3. **Backend**: Processes request, queries AI/route APIs  
+4. **Cequence AI Authentication**: Ensures secure agent access  
+5. **Response**: Optimized eco-route with carbon footprint sent back to frontend  
+6. **Frontend Display**: Results shown on interactive map  
+
+---
+
+## 🔐 Authentication with Cequence AI
+
+We are using **Cequence AI’s MCP Gateway** to:  
+- ✅ Secure **API endpoints** for agent-to-server interactions  
+- ✅ Protect against **unauthorized agent access**  
+- ✅ Enable **real-time session validation** for AI agents  
+- ✅ Provide **per-user tool access control**  
+
+This ensures that only trusted AI agents can dock into **AgentDock** and interact with our eco-route planner.  
+
+📸 *Screenshot of Cequence AI Authentication Flow:*  
+![Cequence AI Screenshot](.<img width="959" height="415" alt="cequencesai" src="https://github.com/user-attachments/assets/4f868041-ad39-413c-8755-00007fe80938" />
+) <!-- replace with actual screenshot -->
+
+
+---
+
+## 📸 Application Screenshots
+
+### 🌍 Eco Route Map  
+![Eco Route Screenshot](<img width="960" height="470" alt="testrout1" src="https://github.com/user-attachments/assets/2398d35a-0735-4dd0-b102-e737350e801a" />
+) <!-- replace with actual screenshot -->
+![Eco Route Screenshot](<img width="379" height="415" alt="testroutereport2" src="https://github.com/user-attachments/assets/846f0466-ec75-4e34-9d05-ae7ca5fb65bf" />
+
+) <!-- replace with actual screenshot -->
+
+![Eco Route Screenshot](<img width="616" height="400" alt="testfinal5" src="https://github.com/user-attachments/assets/c278ee64-6db2-4aae-8078-4876437e68f4" />
+
+
+) <!-- replace with actual screenshot -->
+
+### 🔐 Cequence AI AgentDock Access  
+![Cequence AgentDock Screenshot](<img width="956" height="418" alt="cequencesai2" src="https://github.com/user-attachments/assets/dcc20923-3201-4356-a3f6-419353d33510" />
+) <!-- replace with actual screenshot -->
+
+---
+
+## ⚙️ Tech Stack
+
+- **Frontend**: React + Vite + TailwindCSS + Leaflet  
+- **Backend**: FastAPI + Uvicorn  
+- **AI Agent Security**: Cequence AI (MCP Gateway)  
+- **Deployment**: Render (Frontend + Backend)  
+- **Visualization**: Lucide-react, React-Leaflet  
+
+---
+
+## 📌 Future Enhancements
+
+- ✅ Carbon footprint comparison across multiple routes  
+- ✅ Integration with **public transport APIs**  
+- ✅ User accounts + trip history (with Cequence AI auth)  
+- ✅ Advanced analytics for sustainability tracking  
+
+---
 
 ## Features
 
@@ -117,3 +222,7 @@ This application promotes sustainable transportation by:
 - Calculating and displaying CO2 emissions
 - Offering weather-appropriate travel recommendations
 - Helping users make informed, eco-conscious travel decisions
+
+
+
+✨ Built with ❤️ by **Swetha Ganesh**  
