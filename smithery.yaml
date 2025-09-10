@@ -1,0 +1,7 @@
+name: eco-mcp-server
+type: mcp
+runtime: python3
+
+entrypoint: app.py  # or your main backend file
+dependencies:
+  - mcp[fastapi]  # MCP server package
