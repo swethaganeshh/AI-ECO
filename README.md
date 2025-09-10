@@ -22,6 +22,10 @@ A comprehensive FastAPI application that helps users find the most eco-friendly 
 - Air quality index and pollution levels
 - Dynamic recommendations based on current conditions
 
+  **Architecture Diagram**
+  https://claude.ai/public/artifacts/d9f685b7-a071-4694-b8c0-8c2e94cb9efa?fullscreen=true
+  
+
 ## API Endpoints
 
 ### Core Eco-Planning
