@@ -24,7 +24,7 @@
 
 ## 🏗️ Architecture
 
-![Architecture Diagram](<img width="1983" height="1545" alt="AIECO_Theme2_ArchitectureDiagram" src="https://github.com/user-attachments/assets/d0bc51e1-636a-49e7-a8a8-f076b209509f" />
+![Architecture Diagram](.<img width="1983" height="1545" alt="AIECO_Theme2_ArchitectureDiagram" src="https://github.com/user-attachments/assets/d0bc51e1-636a-49e7-a8a8-f076b209509f" />
 ) <!-- replace with actual diagram path -->
 
 ### Flow:
