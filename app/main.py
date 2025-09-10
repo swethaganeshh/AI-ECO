@@ -53,3 +53,7 @@ async def eco_compare(start: str, end: str):
 @app.get("/healthz")
 def health_check():
     return {"status": "ok", "message": "Eco-MCP API is running"}
+
+@app.get("/")
+def read_root():
+    return {"message": "MCP Server is running on Smithery"}
